@@ -8,12 +8,12 @@ import { NavLink } from "react-router-dom";
 
 const RegisterSchema = Yup.object().shape({
   name: Yup.string()
-    .min(3, "Email must be at least 3 symb long")
-    .max(50, "Email not must be at exceed st 50 symb long ")
+    .min(3, "Name must be at least 3 symb long")
+    .max(50, "Name not must be at exceed st 50 symb long ")
     .required("This is a required field"),
   email: Yup.string()
-    .min(4, "Password must be at least 4 symb long")
-    .max(50, "Passwor not must be at exceed st 50 symb long ")
+    .min(4, "Email must be at least 4 symb long")
+    .max(50, "Email not must be at exceed st 50 symb long ")
     .required("This is a required field"),
   password: Yup.string()
     .min(4, "Password must be at least 4 symb long")

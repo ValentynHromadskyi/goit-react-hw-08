@@ -34,7 +34,13 @@ function App() {
     <b>Refreshing user...</b>
   ) : (
     <div className="wraper">
-      {loading && <Loader />}
+      {loading && (
+        <div className="loader">
+          <div className="load">
+            <Loader />
+          </div>
+        </div>
+      )}
       {error && <Toaster position="top-center" />}
       <Suspense fallback={<Loader />}>
         <Routes>
